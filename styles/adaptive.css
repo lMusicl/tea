@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+    .single-item .slick-arrow{
+        width: 30px; /*ширина стрелки*/
+        height: 30px; /*высота стрелки*/
+    }
+}
+
+@media (max-width: 424px) {
+    .single-item .slick-arrow{
+        width: 15px; /*ширина стрелки*/
+        height: 15px; /*высота стрелки*/
+    }
+
+    .single-item .slick-arrow.slick-prev{
+        left: 10px; /* левая стрелка остается с левой стороны слайдера*/
+    }
+
+    .single-item .slick-arrow.slick-next {
+        right: 10px; /* правая стрелка переместилась справа от слайдера*/
+    }
+}

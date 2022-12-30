@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Arial;
+    src: url("../fonts/ArialRegular.ttf");
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar, .footer {
+    background-color: #F8F9FA;
+}
+
+.single-item {
+    position: relative;
+}
+
+.single-item .slick-arrow{
+    position: absolute;
+    top: 50%; /*выравнивание по вертикали*/
+    z-index: 2; /*стрелки сверху картинок*/
+    font-size: 0; /*убираем надпись на дефолтной стрелке*/
+    width: 40px; /*ширина стрелки*/
+    height: 40px; /*высота стрелки*/
+}
+
+.slick-arrow:before {
+    content: '';
+}
+
+.single-item .slick-arrow.slick-prev{
+    left: 20px; /* левая стрелка остается с левой стороны слайдера*/
+    background: url('../images/prev.png') 0 0 / 100% no-repeat;
+}
+
+.single-item .slick-arrow.slick-next {
+    right: 20px; /* правая стрелка переместилась справа от слайдера*/
+    background: url('../images/next.png') 0 0 / 100% no-repeat;
+}
+
+.accordion .ui-accordion-header {
+    position: relative;
+}
+
+.accordion .ui-accordion-header-icon {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 13px;
+    background: url(../images/open.png) 50% 50% no-repeat;
+}
+
+.accordion .ui-accordion-header-active .ui-accordion-header-icon {
+    background-image: url(../images/close.png);
+}
+
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error, textarea.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
